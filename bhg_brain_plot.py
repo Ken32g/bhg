@@ -41,4 +41,4 @@ def bhg_brain_plot(regions, reg_vals):
   surf_lh.n_points
   
   grad = map_to_labels(plot_arr, labeling, mask=labeling != 0,fill=np.nan)
-  plot_hemispheres(surf_lh, surf_rh, array_name=grad, cmap = "RdBu_r",size=(800, 200))
+  plot_hemispheres(surf_lh, surf_rh, array_name=grad, cmap = "RdBu_r",size=(800, 200),nan_color=(255, 255, 255, 1))
